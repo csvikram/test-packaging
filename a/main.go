@@ -1,22 +1,21 @@
-package main
+package a
 
 import (
-	"io/ioutil"
-
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/csvikram/test-packaging/b"
 )
 
 func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 
-	index, err := ioutil.ReadFile("public/index.html")
-	if err != nil {
-		return events.APIGatewayProxyResponse{}, err
-	}
+	//index, err := ioutil.ReadFile("public/index.html")
+	//if err != nil {
+	//	return events.APIGatewayProxyResponse{}, err
+	//}
 
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
-		Body:       string(index),
+		Body:       b.GetString(),
 		Headers: map[string]string{
 			"Content-Type": "text/html",
 		},

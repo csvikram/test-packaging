@@ -1,0 +1,31 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "uhHJYRQuh9RoyTkfw7Hjsf5m9K4=",
+			"path": "github.com/aws/aws-lambda-go/events",
+			"revision": "401379806f2e8d4aed0b7730918a1b6ff8c04c72",
+			"revisionTime": "2018-02-09T16:46:55Z"
+		},
+		{
+			"checksumSHA1": "uI0hFuHj5Amsq+6TzWcczBIdWZY=",
+			"path": "github.com/aws/aws-lambda-go/lambda",
+			"revision": "401379806f2e8d4aed0b7730918a1b6ff8c04c72",
+			"revisionTime": "2018-02-09T16:46:55Z"
+		},
+		{
+			"checksumSHA1": "d4ehJWLS4YsqFG825pgwdvKDB6A=",
+			"path": "github.com/aws/aws-lambda-go/lambda/messages",
+			"revision": "401379806f2e8d4aed0b7730918a1b6ff8c04c72",
+			"revisionTime": "2018-02-09T16:46:55Z"
+		},
+		{
+			"checksumSHA1": "f9MhOwQHveaPVWO6trwfqHa+W0M=",
+			"path": "github.com/aws/aws-lambda-go/lambdacontext",
+			"revision": "401379806f2e8d4aed0b7730918a1b6ff8c04c72",
+			"revisionTime": "2018-02-09T16:46:55Z"
+		}
+	],
+	"rootPath": "github.com/csvikram/test-packaging"
+}
