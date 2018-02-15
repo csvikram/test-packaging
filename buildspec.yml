@@ -55,5 +55,6 @@ phases:
       - ls
 artifacts:
   type: zip
+  base-directory: /go/src/github.com/csvikram/test-packaging
   files:
-    - /go/src/github.com/csvikram/test-packaging/template-export.yml
+    - template-export.yml
