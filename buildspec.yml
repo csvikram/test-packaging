@@ -37,6 +37,7 @@ phases:
 
       # Build our go application
       - echo $PWD
+      - echo ${CODEBUILD_SRC_DIR}
       - pwd
       - ls -a
       - ls
