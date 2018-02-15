@@ -38,6 +38,8 @@ phases:
       # Build our go application
       - echo $PWD
       - pwd
+      - ls -a
+      - ls
       - go build -o main a/main.go
 
       # Copy static assets to S3, and package application with AWS CloudFormation/SAM
