@@ -8,7 +8,7 @@ phases:
       # AWS Codebuild Go images use /go for the $GOPATH so let's symlink our 
       # application source code into that directory structure.
       - mkdir -p /go/src/github.com/csvikram/test-packaging
-      - cp -R "${CODEBUILD_SRC_DIR}/src" "/go/src/github.com/csvikram/test-packaging"
+      - cp -R ${CODEBUILD_SRC_DIR}/ "/go/src/github.com/csvikram/test-packaging"
 #      - ln -s "${CODEBUILD_SRC_DIR}" "/go/src/github.com/csvikram/test-packaging"
 
       # Install golint
@@ -38,7 +38,7 @@ phases:
       # Build our go application
       - echo $PWD
       - echo $GOPATH
-      - echo ${CODEBUILD_SRC_DIR}
+      - ls ${CODEBUILD_SRC_DIR}
       - pwd
       - ls -a
       - ls
