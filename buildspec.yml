@@ -7,7 +7,7 @@ phases:
 
       # AWS Codebuild Go images use /go for the $GOPATH so let's symlink our 
       # application source code into that directory structure.
-#      - mkdir -p /go/src/github.com/csvikram/test-packaging
+      - mkdir -p /go/src/github.com/csvikram/
 #      - cp -R ${CODEBUILD_SRC_DIR}/* "/go/src/github.com/csvikram/test-packaging"
       - ln -s "${CODEBUILD_SRC_DIR}" "/go/src/github.com/csvikram/test-packaging"
 #      - ln -s "${CODEBUILD_SRC_DIR}" "/go/src/main"
