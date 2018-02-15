@@ -4,6 +4,7 @@ import (
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/csvikram/test-packaging/b"
+	"log"
 )
 
 func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
@@ -12,6 +13,7 @@ func handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	//if err != nil {
 	//	return events.APIGatewayProxyResponse{}, err
 	//}
+	log.Print("hello world")
 
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
