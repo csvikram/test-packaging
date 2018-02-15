@@ -39,6 +39,7 @@ phases:
       - echo $PWD
       - echo $GOPATH
       - ls ${CODEBUILD_SRC_DIR}
+      - echo ${CODEBUILD_SRC_DIR}
       - pwd
       - ls -a
       - ls
